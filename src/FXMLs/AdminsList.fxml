@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="665.0" style="-fx-background-color: linear-gradient(to right bottom, #86a8e7, #959ee3, #a593db, #b587cf, #c37bbf, #b97ec8, #ae82d0, #a186d8, #639bea, #00abe6, #00b6d1, #12bdb2);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.AdminsListController">
+   <children>
+      <Label alignment="CENTER" layoutX="266.0" layoutY="14.0" prefHeight="19.0" prefWidth="194.0" text="Admin Panel">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXScrollPane layoutX="20.0" layoutY="54.0" prefHeight="429.0" prefWidth="628.0">
+         <children>
+            <TableView fx:id="adminTable" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #43C6DB;">
+              <columns>
+                <TableColumn fx:id="serial" prefWidth="92.99999237060547" text="Serial No." />
+                <TableColumn fx:id="Aname" prefWidth="134.0" text="Name" />
+                  <TableColumn fx:id="uName" prefWidth="158.0" text="User Name" />
+                  <TableColumn fx:id="Aemail" prefWidth="241.0" text="E-mail" />
+              </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+      <JFXButton layoutX="250.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#RemoveAdmin" prefHeight="40.0" prefWidth="160.0" style="-fx-background-radius: 15px; -fx-background-color: #DC381F;" text="Remove">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/remove.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="475.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#addAdmin" prefHeight="40.0" prefWidth="160.0" style="-fx-background-radius: 15px; -fx-background-color: #8E35EF;" text="Add">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add_admin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="25.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#refreshTable" prefHeight="40.0" prefWidth="160.0" style="-fx-background-radius: 15px; -fx-background-color: #ADD8E6;" text="Refresh">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

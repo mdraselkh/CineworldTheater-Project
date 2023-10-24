@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="660.0" style="-fx-background-color: #2e2e1f; -fx-border-radius: 0; -fx-border-width: 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.AboutUsController">
+   <children>
+      <Separator layoutX="10.0" layoutY="38.0" prefHeight="3.0" prefWidth="640.0" style="-fx-background-color: white;" />
+      <Pane layoutX="9.0" layoutY="50.0" prefHeight="239.0" prefWidth="422.0" style="-fx-background-color: white; -fx-border-color: #cc9900; -fx-border-radius: 3; -fx-border-width: 0 0 0 5,0 0;">
+         <children>
+            <Label layoutX="18.0" layoutY="4.0" text="Details" textFill="#cc9900">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="12.0" layoutY="28.0" prefHeight="3.0" prefWidth="405.0" />
+            <Label layoutX="9.0" layoutY="-4.0" prefHeight="207.0" prefWidth="411.0" text="Firstly, you need to configure the show details without which cannot book a movie.If you want to book a movie to show in Cineworld Theater, you will book the Movie ticket. You also can edit your profile. An Admin will manage the Application who can insert a new movie , update movies data and delete movies ." wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="312.0" prefHeight="176.0" prefWidth="383.0" style="-fx-background-color: white; -fx-border-color: #000099; -fx-border-radius: 3; -fx-border-width: 0 0 0 5,0 0;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="Created By" textFill="#000099">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="8.0" layoutY="30.0" prefHeight="3.0" prefWidth="369.0" />
+            <Label layoutX="43.0" layoutY="33.0" prefHeight="21.0" prefWidth="98.0" text="Rashel Khan">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="54.0" prefHeight="21.0" prefWidth="231.0" text="Contact: rasel123@gmail.com" textFill="#7c7575" />
+            <Label layoutX="46.0" layoutY="78.0" prefHeight="21.0" prefWidth="140.0" text="Hridoy Chowdhury">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="99.0" text="Contact: hridoy123@gmail.com" textFill="#7c7575" />
+            <Label layoutX="43.0" layoutY="131.0" prefHeight="21.0" prefWidth="151.0" text="Hadayet Ullah Razu">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="152.0" prefHeight="21.0" prefWidth="203.0" text="Contact: razu123@gmail.com" textFill="#7c7575" />
+         </children>
+      </Pane>
+      <Pane layoutX="407.0" layoutY="351.0" prefHeight="137.0" prefWidth="245.0" style="-fx-background-color: white; -fx-border-color: #993399; -fx-border-radius: 3; -fx-border-width: 0 0 0 5,0 0;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="Other Issuse" textFill="#993399">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="10.0" layoutY="30.0" prefHeight="3.0" prefWidth="231.0" />
+            <Label layoutX="7.0" layoutY="30.0" prefHeight="120.0" prefWidth="231.0" text="If You have to any issuse like ticket booking problem or something Please Contact us immediately." wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="5.0" text="About" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="444.0" layoutY="48.0" prefHeight="293.0" prefWidth="203.0" style="-fx-background-color: white; -fx-border-color: #00cc00; -fx-border-radius: 3; -fx-border-width: 0 0 0 5,0 0;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="Resource Used" textFill="#00cc00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="7.0" layoutY="30.0" prefHeight="3.0" prefWidth="192.0" />
+            <Label layoutX="14.0" layoutY="42.0" prefHeight="30.0" prefWidth="192.0" text="JAVA FX" textFill="#1e1b1b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="72.0" prefHeight="30.0" prefWidth="192.0" text="JFoenix" textFill="#1e1b1b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="102.0" prefHeight="30.0" prefWidth="192.0" text="Font Awesome FX" textFill="#1e1b1b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="133.0" prefHeight="30.0" prefWidth="192.0" text="Flat Icon" textFill="#1e1b1b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="163.0" prefHeight="30.0" prefWidth="192.0" text="SQL" textFill="#1e1b1b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="193.0" prefHeight="30.0" prefWidth="192.0" text="Material UI Colors" textFill="#1e1b1b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="223.0" prefHeight="30.0" prefWidth="192.0" text="Java Regex" textFill="#1e1b1b" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

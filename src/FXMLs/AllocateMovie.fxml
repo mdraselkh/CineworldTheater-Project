@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="550.0" style="-fx-background-color: linear-gradient(to right bottom, #2b4976, #396794, #4a87b1, #5ea8cd, #77cae8);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.AllocateMovieController">
+   <children>
+      <Label fx:id="nMovie" layoutX="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="472.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="pMovie" fitHeight="236.0" fitWidth="185.0" layoutX="349.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton alignment="CENTER" layoutX="360.0" layoutY="316.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#saveAction" prefHeight="50.0" prefWidth="165.0" style="-fx-background-color: #008080; -fx-background-radius: 10px;" text="Save" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="24.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="105.0" text="Start Date: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="startDate" layoutX="124.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="175.0" style="-fx-text-fill-color: white;" />
+      <JFXDatePicker fx:id="endDate" layoutX="124.0" layoutY="101.0" prefHeight="24.0" prefWidth="175.0" />
+      <Label layoutX="24.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="105.0" text="End Date:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="153.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="75.0" text="Screen: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="screen1" layoutX="124.0" layoutY="157.0" text="SCREEN 1" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="screen2" layoutX="124.0" layoutY="187.0" text="SCREEN 2" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="screen3" layoutX="124.0" layoutY="217.0" text="SCREEN 3" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <Label layoutX="24.0" layoutY="255.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="100.0" text="Show Time:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="slot1" layoutX="124.0" layoutY="258.0" text="11:30AM- 01:30PM" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="slot2" layoutX="124.0" layoutY="285.0" text="02:30PM- 05:30PM" textFill="WHITE" unCheckedColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <Label layoutX="24.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="100.0" text="Ticket Price: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="125.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Separator layoutX="124.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3.0" prefWidth="120.0" />
+      <JFXCheckBox fx:id="slot3" layoutX="124.0" layoutY="313.0" text="06:00PM- 09:00PM" textFill="WHITE" unCheckedColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXCheckBox>
+   </children>
+</AnchorPane>

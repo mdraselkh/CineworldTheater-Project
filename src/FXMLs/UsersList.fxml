@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="665.0" style="-fx-background-color: #43C6DB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.UsersListController">
+   <children>
+      <JFXScrollPane layoutX="6.0" layoutY="55.0" prefHeight="418.0" prefWidth="653.0">
+         <children>
+            <TableView fx:id="userTable" prefHeight="439.0" prefWidth="653.0" style="-fx-background-color: #6D7B8D;">
+              <columns>
+                <TableColumn fx:id="serial" prefWidth="131.99999237060547" text="Serial No." />
+                <TableColumn fx:id="userName" prefWidth="259.0" text="Name" />
+                  <TableColumn fx:id="userMail" prefWidth="260.0" text="E-mail" />
+              </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+      <JFXButton layoutX="234.0" layoutY="478.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#removeUser" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #DC381F; -fx-background-radius: 20px;" text="Remove">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/remove.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="TOP_CENTER" layoutX="275.0" layoutY="-4.0" prefHeight="38.0" prefWidth="125.0" text="Users">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

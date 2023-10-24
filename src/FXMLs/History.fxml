@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="669.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.HistoryController">
+   <children>
+      <TableView fx:id="historyTable" layoutY="46.0" prefHeight="436.0" prefWidth="669.0">
+        <columns>
+          <TableColumn fx:id="film" prefWidth="112.0" text="Film" />
+            <TableColumn fx:id="ticketid" prefWidth="77.0" text="TicketId" />
+            <TableColumn fx:id="screen" prefWidth="88.0" text="Screen" />
+            <TableColumn fx:id="showdate" prefWidth="97.0" text="ShowDate" />
+            <TableColumn fx:id="showtime" prefWidth="120.0" text="ShowTime" />
+            <TableColumn fx:id="seat" prefWidth="108.0" text="Seat" />
+            <TableColumn fx:id="totalprice" prefWidth="66.0" text="T.Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="307.0" layoutY="14.0" text="Book Film">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="removebtn" layoutX="581.0" layoutY="487.0" onAction="#RemoveAction" style="-fx-background-color: orange;" text="Remove" />
+   </children>
+</AnchorPane>

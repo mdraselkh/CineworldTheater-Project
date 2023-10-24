@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="665.0" style="-fx-background-color: #659EC7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.MoviesInfoController">
+   <children>
+      <Label alignment="CENTER" layoutX="188.0" layoutY="5.0" prefHeight="36.0" prefWidth="276.0" text="Movies Information">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXScrollPane layoutX="14.0" layoutY="41.0" prefHeight="433.0" prefWidth="637.0">
+         <children>
+            <TableView fx:id="movieTable" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="Serial" prefWidth="75.0" text="Serial" />
+                <TableColumn fx:id="Name" prefWidth="248.0" text="Movie Name" />
+                  <TableColumn fx:id="Director" prefWidth="202.0" text="Director" />
+                  <TableColumn fx:id="Status" prefWidth="111.0" text="Status" />
+              </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+      <JFXButton layoutX="25.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#refreshAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: #85BB65; -fx-background-radius: 15px;" text="Refresh">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="185.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#removeMovie" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: #C36241; -fx-background-radius: 15px;" text="Remove">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="345.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#addMovieAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: #6CBB3C; -fx-background-radius: 15px;" text="Add Movie">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/addMovie.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="505.0" layoutY="490.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#editStatusAction" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: #89C35C; -fx-background-radius: 15px;" text="Edit Status">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

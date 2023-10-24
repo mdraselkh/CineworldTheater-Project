@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to right top, #2f5185, #007ca0, #34a4a7, #84c7a5, #d5e6ae);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.AddAdminController">
+   <children>
+      <JFXTextField fx:id="adminName" focusColor="#e8ecf8" labelFloat="true" layoutX="14.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="230.0" promptText="Name" style="-fx-text-fill: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="adminUserName" focusColor="#e8ecf8" labelFloat="true" layoutX="14.0" layoutY="70.0" prefHeight="30.0" prefWidth="230.0" promptText="User Name" style="-fx-text-fill: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="adminMail" focusColor="#e8ecf8" labelFloat="true" layoutX="14.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="230.0" promptText="E-mail" style="-fx-text-fill: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="adminPass" focusColor="#e8ecf8" labelFloat="true" layoutX="14.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="230.0" promptText="Password" style="-fx-text-fill: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="272.0" layoutY="191.0" onAction="#addAction" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: #4E8975; -fx-background-radius: 20px;" text="Submit">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
