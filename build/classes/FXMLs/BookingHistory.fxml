@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="665.0" style="-fx-background-color: linear-gradient(to right bottom, #73a3ea, #66b5ed, #6bc6eb, #80d4e6, #9ce0e2);;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="cineworldcinema.BookingHistoryController">
+   <children>
+      <Label layoutX="288.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="290.0" text="Booking Summary">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <JFXScrollPane layoutX="40.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="bookingSummary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="ticketNumber" prefWidth="73.00000762939453" text="Ticket ID" />
+                <TableColumn fx:id="cusName" prefWidth="128.0" text="Customer Name" />
+                  <TableColumn fx:id="time" prefWidth="118.0" text="Show Time" />
+                  <TableColumn fx:id="date" prefWidth="95.0" text="ShowDate" />
+                  <TableColumn fx:id="status" prefWidth="67.0" text="Status" />
+                  <TableColumn fx:id="bookTime" prefWidth="119.0" text="Booking Time" />
+              </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+   </children>
+</AnchorPane>

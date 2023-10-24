@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.GuestLogInController">
+   <children>
+      <BorderPane fx:id="BorderPane" prefHeight="623.0" prefWidth="914.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="520.0" prefWidth="245.0" style="-fx-background-color: linear-gradient(to left top, #9192ec, #8687e4, #7a7ddb, #6f72d3, #6368cb);" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton alignment="CENTER" onAction="#Home" prefHeight="60.0" prefWidth="325.0" ripplerFill="BLACK" styleClass="nav-button" text="Home">
+                     
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="HOME" size="25" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="1.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#UpcomingMovie" prefHeight="60.0" prefWidth="325.0" styleClass="nav-button" text="Upcoming Movie">
+                    
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="1.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView size="28" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" onAction="#movieScreenAction" prefHeight="60.0" prefWidth="325.0" styleClass="nav-button" text="Movie Screen">
+                   
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FILM" size="25" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="1.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" onAction="#AboutAction" prefHeight="60.0" prefWidth="325.0" styleClass="nav-button" text="About Us">
+                     
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="INFO" size="30" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="1.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" onAction="#Contact" prefHeight="60.0" prefWidth="325.0" styleClass="nav-button" text="Contact Us">
+                  
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PHONE" size="30" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="1.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="80.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="900.0" style="-fx-background-color: #DC7633;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="116.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="265.0" text="Cineworld Theater" textFill="#252525">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="148.0" layoutY="46.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="190.0" text="Entertainment For Everyone" underline="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <ImageView fitHeight="81.0" fitWidth="82.0" layoutX="33.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <FontAwesomeIconView glyphName="USER" layoutX="862.0" layoutY="40.0" size="50" text="" wrappingWidth="12.714285850524902" />
+                        <JFXButton layoutX="689.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 10;" text="Guest Mode">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" layoutX="772.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#ExitAction" prefHeight="36.0" prefWidth="90.0" text="Exit">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+  
+</AnchorPane>

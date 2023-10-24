@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="665.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.MoviesController">
+   <children>
+      <Separator layoutX="1.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3.0" prefWidth="665.0" style="-fx-background-color: black;" />
+      <Label layoutX="14.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="252.0" text="Now Showing...">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="665.0">
+         <content>
+            <AnchorPane layoutX="-1.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="647.0" style="-fx-background-color: linear-gradient(to right top, #a4a0ff, #9da2ff, #95a4ff, #8ea6ff, #87a8ff, #87a7fe, #86a7fd, #86a6fc, #8da3fa, #93a1f7, #999ef5, #9f9bf2);;">
+               <children>
+                  <ImageView fx:id="img1" fitHeight="175.0" fitWidth="165.0" layoutX="30.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="452.0" AnchorPane.topAnchor="15.0" />
+                  <Label fx:id="name1" layoutX="30.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genre1" alignment="TOP_LEFT" layoutX="30.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: black;" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img2" fitHeight="175.0" fitWidth="165.0" layoutX="240.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="name1" layoutX="240.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genre2" layoutX="240.0" layoutY="221.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: black;" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img3" fitHeight="175.0" fitWidth="165.0" layoutX="450.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="name3" layoutX="450.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genre3" layoutX="450.0" layoutY="221.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: black;" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img11" fitHeight="175.0" fitWidth="165.0" layoutX="30.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="img12" fitHeight="175.0" fitWidth="165.0" layoutX="240.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="img13" fitHeight="175.0" fitWidth="165.0" layoutX="450.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="name11" layoutX="30.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name12" layoutX="240.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name13" layoutX="450.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genre11" layoutX="30.0" layoutY="486.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: black;" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genre12" layoutX="240.0" layoutY="486.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: black;" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genre13" layoutX="450.0" layoutY="486.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: black;" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img111" fitHeight="175.0" fitWidth="165.0" layoutX="30.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="img112" fitHeight="175.0" fitWidth="165.0" layoutX="240.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="img113" fitHeight="175.0" fitWidth="165.0" layoutX="450.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="name111" layoutX="30.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name112" layoutX="240.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name113" layoutX="450.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" style="-fx-background-color: red;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="647.0" style="-fx-background-color: linear-gradient(to right top, #a4a0ff, #9da2ff, #95a4ff, #8ea6ff, #87a8ff, #87a7fe, #86a7fd, #86a6fc, #8da3fa, #93a1f7, #999ef5, #9f9bf2);;">
+                     <children>
+                        <ImageView fx:id="img1" fitHeight="175.0" fitWidth="165.0" layoutX="30.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name1" layoutX="30.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre1" alignment="TOP_LEFT" layoutX="30.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img2" fitHeight="175.0" fitWidth="165.0" layoutX="240.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name2" layoutX="240.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre2" alignment="TOP_LEFT" layoutX="240.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img3" fitHeight="175.0" fitWidth="165.0" layoutX="457.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name3" layoutX="462.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre3" alignment="TOP_LEFT" layoutX="460.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img4" fitHeight="175.0" fitWidth="165.0" layoutX="30.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img5" fitHeight="175.0" fitWidth="165.0" layoutX="240.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img6" fitHeight="175.0" fitWidth="165.0" layoutX="455.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name4" layoutX="30.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="name5" layoutX="240.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="name6" layoutX="455.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre4" alignment="TOP_LEFT" layoutX="30.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre5" alignment="TOP_LEFT" layoutX="240.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre6" alignment="TOP_LEFT" layoutX="457.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img7" fitHeight="175.0" fitWidth="165.0" layoutX="30.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img8" fitHeight="175.0" fitWidth="165.0" layoutX="240.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img9" fitHeight="175.0" fitWidth="165.0" layoutX="458.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name7" layoutX="30.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="name8" layoutX="240.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="name9" layoutX="455.0" layoutY="720.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre7" alignment="TOP_LEFT" layoutX="30.0" layoutY="745.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre8" alignment="TOP_LEFT" layoutX="240.0" layoutY="745.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genre9" alignment="TOP_LEFT" layoutX="457.0" layoutY="745.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="viewbtn1" layoutX="13.0" layoutY="239.0" onAction="#viewAction1" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn2" layoutX="226.0" layoutY="241.0" onAction="#viewAction2" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn3" layoutX="451.0" layoutY="241.0" onAction="#viewAction3" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn4" layoutX="15.0" layoutY="507.0" onAction="#viewAction4" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn5" layoutX="233.0" layoutY="507.0" onAction="#viewAction5" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn6" layoutX="458.0" layoutY="508.0" onAction="#viewAction6" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn8" layoutX="233.0" layoutY="767.0" onAction="#viewAction8" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn7" layoutX="18.0" layoutY="766.0" onAction="#viewAction7" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="viewbtn9" layoutX="461.0" layoutY="767.0" onAction="#viewAction9" style="-fx-background-color: #3A8E02;" text="View" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn1" layoutX="97.0" layoutY="239.0" onAction="#bookAction1" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn2" layoutX="314.0" layoutY="241.0" onAction="#bookAction2" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn3" layoutX="540.0" layoutY="241.0" onAction="#bookAction3" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn4" layoutX="97.0" layoutY="506.0" onAction="#bookAction4" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn5" layoutX="321.0" layoutY="508.0" onAction="#bookAction5" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn6" layoutX="542.0" layoutY="509.0" onAction="#bookAction6" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn7" layoutX="104.0" layoutY="767.0" onAction="#bookAction7" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn8" layoutX="324.0" layoutY="767.0" onAction="#bookAction8" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bookbtn9" layoutX="546.0" layoutY="767.0" onAction="#bookAction9" style="-fx-background-color: #3A8E02;" text="Book" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

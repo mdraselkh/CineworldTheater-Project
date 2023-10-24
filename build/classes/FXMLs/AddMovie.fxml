@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="addMoviePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to right top, #43bfc7, #3ebcd3, #45b9dc, #55b5e3, #69b0e7, #69abdf, #68a6d6, #68a1ce, #5c9ab9, #5991a4, #5b8790, #5e7d7e);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineworldcinema.AddMovieController">
+   <children>
+      <Label alignment="CENTER" layoutX="153.0" layoutY="-4.0" prefHeight="19.0" prefWidth="391.0" text="Add Movie Details">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="movieName" focusColor="WHITE" labelFloat="true" layoutX="15.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="390.0" promptText="Movie Name" style="-fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="directorName" focusColor="WHITE" labelFloat="true" layoutX="15.0" layoutY="97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="390.0" promptText="Director Name" style="-fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="castName" focusColor="WHITE" labelFloat="true" layoutX="15.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="390.0" promptText="Starring" style="-fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="genre" focusColor="WHITE" labelFloat="true" layoutX="15.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="390.0" promptText="Genre" style="-fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXRadioButton fx:id="showing" layoutX="125.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="120.0" text="Showing">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="status" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="upcoming" layoutX="268.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="120.0" text="Upcoming" toggleGroup="$status">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXRadioButton>
+      <Label layoutX="15.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="70.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="description" focusColor="WHITE" labelFloat="true" layoutX="15.0" layoutY="444.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="391.0" promptText="Description" style="-fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <Label layoutX="12.0" layoutY="350.0" prefHeight="19.0" prefWidth="116.0" text="Date Of Release:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="releaseDate" defaultColor="BLACK" layoutX="153.0" layoutY="345.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="255.0" promptText="Choose Date" style="-fx-text-fill: white;" />
+      <ImageView fx:id="backImage" fitHeight="208.0" fitWidth="180.0" layoutX="482.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/defaultFilmPoster.jpg" />
+         </image></ImageView>
+      <JFXButton alignment="CENTER" layoutX="482.0" layoutY="316.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#uploadPosterAction" prefHeight="33.0" prefWidth="180.0" style="-fx-background-color: #85BB65; -fx-background-radius: 12px;" text="Upload Poster">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/upload%20poster.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="497.0" layoutY="438.0" onAction="#submitAction" prefHeight="29.0" prefWidth="164.0" style="-fx-background-radius: 15px; -fx-background-color: #307D7E;" text="Submit">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="moviePoster" fitHeight="208.0" fitWidth="180.0" layoutX="482.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="duration" focusColor="WHITE" labelFloat="true" layoutX="15.0" layoutY="392.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="390.0" promptText="Movie Duration" style="-fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="trailerLink" focusColor="WHITE" labelFloat="true" layoutX="15.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="390.0" promptText="Movie Trailer Link" style="-fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
